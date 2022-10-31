@@ -4,11 +4,11 @@ metadata:
   name: cloudtrace-agent
   namespace: acm-workshop--tenant
   annotations:
-    config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/acm-workshop--tenant/IAMServiceAccount/
+    config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/acm-workshop--tenant/IAMServiceAccount/gke-primary-pool
 spec:
   memberFrom:
     serviceAccountRef:
-      name: 
+      name: gke-primary-pool
       namespace: acm-workshop--tenant
   resourceRef:
     kind: Project

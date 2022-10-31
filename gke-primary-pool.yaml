@@ -26,4 +26,4 @@ spec:
       enableIntegrityMonitoring: true
       enableSecureBoot: true
     serviceAccountRef:
-      name: 
+      name: gke-primary-pool
