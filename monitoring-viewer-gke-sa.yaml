@@ -1,0 +1,16 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: monitoring-viewer
+  namespace: acm-workshop--tenant
+  annotations:
+    config.kubernetes.io/depends-on: iam.cnrm.cloud.google.com/namespaces/acm-workshop--tenant/IAMServiceAccount/
+spec:
+  memberFrom:
+    serviceAccountRef:
+      name: 
+      namespace: acm-workshop--tenant
+  resourceRef:
+    kind: Project
+    external: acm-workshop--tenant
+  role: roles/monitoring.viewer
