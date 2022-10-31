@@ -4,4 +4,4 @@ metadata:
   name: 
   namespace: acm-workshop--tenant
 spec:
-  displayName: 
+  displayName: gke-primary-pool
