@@ -8,7 +8,7 @@ metadata:
 spec:
   location: global
   authority:
-    issuer: https://container.googleapis.com/v1/projects/$\{TENANT_PROJECT_ID\}/locations/$\{GKE_LOCATION\}/clusters/$\{GKE_NAME\}
+    issuer: https://container.googleapis.com/v1/projects/acm-workshop--tenant/locations/us-east1/clusters/gke
   endpoint:
     gkeCluster:
       resourceRef:
