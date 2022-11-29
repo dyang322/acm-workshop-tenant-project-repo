@@ -1,0 +1,10 @@
+apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
+kind: GKEHubFeature
+metadata:
+  name: servicemesh
+  namespace: acm-workshop--tenant
+spec:
+  projectRef:
+    external: acm-workshop--tenant
+  location: global
+  resourceID: servicemesh
